@@ -22,7 +22,7 @@ const mongoURL = 'mongodb://localhost:27017/mongouploads';
 // Create mongo connection
 const conn = mongoose.createConnection(mongoURL);
 
-// Init gfs
+// Init gfs( GridFS)
 let gfs;
 
 conn.once('open', () => {
